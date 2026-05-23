@@ -112,13 +112,21 @@ export default function Contact() {
         </div>
 
         {/* Final CTA */}
-        <div className="reveal reveal-delay-3">
+        <div className="reveal reveal-delay-3 flex flex-wrap gap-3 justify-center">
           <a
             href="mailto:shaibuwisdom@gmail.com"
             className="inline-flex items-center gap-2 font-mono text-sm px-8 py-3 bg-green text-bg-base font-semibold rounded hover:bg-green-bright transition-all hover:shadow-lg hover:shadow-green/25"
           >
             <span>./hire_wisdom</span>
             <span>→</span>
+          </a>
+          <a
+            href="/Wisdom_Ojochegbe_Shaibu_Resume.pdf"
+            download="Wisdom_Ojochegbe_Shaibu_Resume.pdf"
+            className="inline-flex items-center gap-2 font-mono text-sm px-8 py-3 border border-green/40 text-green hover:bg-green/10 hover:border-green rounded transition-all"
+          >
+            <span>download_cv</span>
+            <span>↓</span>
           </a>
         </div>
       </div>

@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     title: 'Wisdom Shaibu — Backend & DevOps Engineer',
     description: 'Building systems that don\'t break at 3am.',
     type: 'website',
+    siteName: 'Wisdom Shaibu',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Wisdom Shaibu — Backend & DevOps Engineer',
+    description: 'Building systems that don\'t break at 3am.',
   },
 }
 

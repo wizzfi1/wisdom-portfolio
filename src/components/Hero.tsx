@@ -155,8 +155,16 @@ export default function Hero() {
               ./view_work
             </a>
             <a
+              href="/Wisdom_Ojochegbe_Shaibu_Resume.pdf"
+              download="Wisdom_Ojochegbe_Shaibu_Resume.pdf"
+              className="font-mono text-sm px-5 py-2.5 border border-green/40 text-green hover:bg-green/10 hover:border-green rounded transition-all flex items-center gap-2"
+            >
+              <span>download_cv</span>
+              <span className="text-xs">↓</span>
+            </a>
+            <a
               href="#contact"
-              className="font-mono text-sm px-5 py-2.5 border border-green/40 text-green hover:bg-green/10 hover:border-green rounded transition-all"
+              className="font-mono text-sm px-5 py-2.5 border border-border text-txt-muted hover:text-txt-base hover:border-border-accent rounded transition-all"
             >
               ./contact
             </a>
