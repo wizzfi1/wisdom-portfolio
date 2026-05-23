@@ -46,10 +46,12 @@ export default function Hero() {
   const [seqIdx, setSeqIdx] = useState(0)
   const [outputLine, setOutputLine] = useState(0)
   const [charIdx, setCharIdx] = useState(0)
+  const terminalBodyRef = useRef<HTMLDivElement>(null)
   const bottomRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+    const el = terminalBodyRef.current
+    if (el) el.scrollTop = el.scrollHeight
   }, [lines, typing])
 
   useEffect(() => {
@@ -186,7 +188,7 @@ export default function Hero() {
           </div>
 
           {/* Terminal body */}
-          <div className="bg-bg-card p-4 h-80 overflow-y-auto space-y-1" style={{ scrollbarWidth: 'none' }}>
+          <div ref={terminalBodyRef} className="bg-bg-card p-4 h-80 overflow-y-auto space-y-1" style={{ scrollbarWidth: 'none' }}>
             {lines.map((line, i) => (
               <div key={i}>
                 {line.type === 'cmd' && (
