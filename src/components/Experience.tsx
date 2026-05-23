@@ -5,6 +5,7 @@ const roles = [
   {
     title: 'Backend Engineer',
     company: 'ArchSaint Nexus',
+    companyLink: 'https://pickup.archsaintnexus.com/',
     period: 'Jan 2026 – Present',
     type: 'Full-time · Remote',
     color: 'green',
@@ -19,6 +20,7 @@ const roles = [
   {
     title: 'Graduate DevOps Engineer',
     company: 'Cognetiks Consulting',
+    companyLink: 'https://cognetiks.com/',
     period: 'Aug 2025 – Present',
     type: 'Graduate role · Remote',
     color: 'blue',
@@ -32,6 +34,7 @@ const roles = [
   {
     title: 'Azure Developer Intern',
     company: 'Teknowledge',
+    companyLink: 'https://teknowledge.com/',
     period: 'Jan 2025 – Aug 2025',
     type: 'Internship · Remote',
     color: 'purple',
@@ -45,6 +48,7 @@ const roles = [
   {
     title: 'Universal Teller',
     company: 'Sterling Bank',
+    companyLink: 'https://sterling.ng/',
     period: 'May 2023 – Oct 2025',
     type: 'Lagos, Nigeria',
     color: 'orange',
@@ -109,7 +113,14 @@ export default function Experience() {
                   <div>
                     <h3 className="font-semibold text-txt-base text-lg">{role.title}</h3>
                     <p className="font-mono text-sm text-txt-muted">
-                      <span className={`text-${role.color}`}>{role.company}</span>
+                      <a
+                        href={role.companyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`text-${role.color} hover:underline underline-offset-2`}
+                      >
+                        {role.company}
+                      </a>
                       {' · '}{role.type}
                     </p>
                   </div>

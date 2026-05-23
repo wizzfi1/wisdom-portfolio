@@ -9,7 +9,7 @@ const projects = [
       'Production-ready logistics platform with shipment lifecycle management, real-time WebSocket tracking, event-driven architecture, async email queues via BullMQ, and role-based access control for 4 actor types.',
     stack: ['Node.js', 'TypeScript', 'MongoDB', 'Redis', 'BullMQ', 'WebSocket', 'Jest'],
     color: 'green',
-    link: 'https://github.com/wizzfi1',
+    link: 'https://pickup.archsaintnexus.com/',
     highlight: true,
   },
   {
@@ -19,7 +19,7 @@ const projects = [
       'Full Kubernetes platform running 8+ independently deployable microservices. AWS infrastructure via Terraform, HTTPS via NGINX + Let\'s Encrypt, standardised Helm chart releases, structured logging and health checks.',
     stack: ['Kubernetes', 'Docker', 'Terraform', 'AWS', 'Helm', 'NGINX', 'Node.js', 'Python'],
     color: 'blue',
-    link: 'https://github.com/wizzfi1',
+    link: 'https://github.com/wizzfi1/Wizfi-Microservices',
     highlight: false,
   },
   {
@@ -29,7 +29,7 @@ const projects = [
       'End-to-end CI/CD platform with automated build, test, SAST scanning, secrets detection, and IaC validation in pipeline gates. Container hardening with non-root execution + Prometheus/Grafana monitoring.',
     stack: ['GitHub Actions', 'Docker', 'Kubernetes', 'Prometheus', 'Grafana', 'SAST', 'Terraform'],
     color: 'purple',
-    link: 'https://github.com/wizzfi1',
+    link: 'https://github.com/wizzfi1/FullStack_DevSec',
     highlight: false,
   },
   {
@@ -39,17 +39,17 @@ const projects = [
       'Real-time order tracking backend with secure webhook-driven architecture, full onboarding (registration → OTP → KYC → admin approval), strict PostgreSQL lifecycle transitions, and async email notifications.',
     stack: ['Node.js', 'PostgreSQL', 'WebSockets', 'JWT', 'Rate limiting'],
     color: 'green',
-    link: 'https://github.com/wizzfi1',
+    link: 'https://github.com/wizzfi1/Wisdoms_Order_Fellow',
     highlight: false,
   },
   {
-    name: 'End-to-End DevOps Pipeline',
-    period: 'May 2025 – Jul 2025',
+    name: 'Wisdom Job Board API',
+    period: 'Mar 2025 – Jul 2025',
     description:
-      'Infrastructure provisioning and configuration management with Terraform + Ansible. CI/CD pipeline from source to production, application health checks, and monitoring alerts for runtime failure detection.',
-    stack: ['Terraform', 'Ansible', 'CI/CD', 'Flask', 'Docker', 'Monitoring'],
+      'Modular REST API with JWT-based authentication, role-based access control, and relational PostgreSQL data models using Sequelize ORM. Containerized with Docker and production-ready health endpoints.',
+    stack: ['Node.js', 'Express', 'PostgreSQL', 'Sequelize ORM', 'JWT', 'Docker'],
     color: 'blue',
-    link: 'https://github.com/wizzfi1',
+    link: 'https://github.com/wizzfi1/Wisdom14DaysofCodeAndDesign',
     highlight: false,
   },
   {
