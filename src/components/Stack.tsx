@@ -100,7 +100,7 @@ export default function Stack() {
         </div>
 
         {/* Skill tags */}
-        <div className="reveal reveal-delay-2 flex flex-wrap gap-2 min-h-[120px]">
+        <div key={active} className="reveal reveal-delay-2 flex flex-wrap gap-2 min-h-[120px]">
           {activeCategory.skills.map((skill, i) => (
             <span
               key={skill}
