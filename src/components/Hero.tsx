@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 const SEQUENCES = [
   {
     cmd: 'whoami',
-    output: ['Wisdom Shaibu', 'Backend Engineer · DevOps Engineer'],
+    output: ['Wisdom Ojochegbe Shaibu', 'Backend Engineer · DevOps Engineer'],
   },
   {
     cmd: 'cat mission.txt',
