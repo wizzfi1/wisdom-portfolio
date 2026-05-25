@@ -34,14 +34,16 @@ export default function About() {
 
           <div className="reveal reveal-delay-1 space-y-4 text-txt-muted leading-relaxed">
             <p>
-              I'm a Backend and DevOps Engineer who builds the stuff that has to work — the APIs,
-              the pipelines, the infra. Not because it's cool, but because teams depend on it being
-              up, fast, and correct.
+              I'm a Backend, DevOps, and AI Systems Engineer who builds the stuff that has to work —
+              the APIs, the pipelines, the infra, and increasingly, the AI layer on top of it.
+              Not because it's cool, but because teams depend on it being up, fast, and correct.
             </p>
             <p>
               My work spans production-ready Node.js/TypeScript APIs with event-driven architecture,
-              to Kubernetes platforms running 8+ microservices, to CI/CD pipelines with embedded
-              DevSecOps controls. I don't stop at "it works on my machine."
+              to Kubernetes platforms running 8+ microservices, to RAG pipelines and LLM orchestration
+              systems built on Azure OpenAI. I hold the{' '}
+              <span className="text-green font-medium">Azure AI Engineer Associate (2026)</span>{' '}
+              certification and apply it in real systems.
             </p>
             <p>
               Before software, I spent two years at Sterling Bank processing 100+ daily transactions —

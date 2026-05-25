@@ -41,6 +41,19 @@ const categories = [
       'Structured logging', 'Health checks', 'Alerting',
     ],
   },
+  {
+    id: 'ai',
+    label: 'AI & High Throughput',
+    color: 'green',
+    skills: [
+      'Azure OpenAI', 'Azure AI Services', 'Azure AI Foundry',
+      'RAG Pipelines', 'LLM Orchestration', 'Semantic Kernel',
+      'Vector Databases', 'Embeddings', 'Prompt Engineering',
+      'Azure Document Intelligence', 'Azure AI Search',
+      'Async Queue Architecture', 'BullMQ', 'Event-Driven Systems',
+      'High-Throughput API Design', 'WebSocket Streaming',
+    ],
+  },
 ]
 
 const colorMap: Record<string, string> = {

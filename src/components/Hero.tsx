@@ -27,6 +27,13 @@ const SEQUENCES = [
     ],
   },
   {
+    cmd: 'cat ai_systems.txt',
+    output: [
+      'Azure OpenAI · RAG pipelines · LLM orchestration',
+      'High-throughput async queues · Vector DBs · Semantic Kernel',
+    ],
+  },
+  {
     cmd: 'ping hire-wisdom --repeat',
     output: ['PONG — Available. Response time: immediate.', 'Zero packet loss. 100% uptime.'],
   },
@@ -138,13 +145,15 @@ export default function Hero() {
             <div className="mt-4 flex flex-wrap gap-2">
               <span className="tag">Backend Engineer</span>
               <span className="tag-blue tag">DevOps Engineer</span>
-              <span className="tag-purple tag">Cloud ∙ AWS ∙ Azure</span>
+              <span className="tag-purple tag">AI Systems</span>
+              <span className="tag-orange tag">Cloud ∙ AWS ∙ Azure</span>
             </div>
           </div>
 
           <p className="text-txt-muted leading-relaxed max-w-md">
-            I build production-grade APIs, distributed systems, and cloud infrastructure
-            that scale under pressure. If it runs in prod, it's my responsibility.
+            I build production-grade APIs, AI-powered systems, and cloud infrastructure
+            that scale under pressure — from LLM orchestration pipelines to high-throughput
+            Kubernetes platforms. If it runs in prod, it's my responsibility.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">
