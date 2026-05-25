@@ -39,22 +39,32 @@ function AnimatedStat({ end, suffix, color, label, triggered }: {
 
 export default function About() {
   const ref = useRef<HTMLDivElement>(null)
+  const statsGridRef = useRef<HTMLDivElement>(null)
   const [statsTriggered, setStatsTriggered] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(e => {
-          e.target.classList.toggle('visible', e.isIntersecting)
-          if (e.isIntersecting && (e.target as HTMLElement).dataset.stats) {
-            setStatsTriggered(true)
-          }
-        })
-      },
+      (entries) => entries.forEach(e => e.target.classList.toggle('visible', e.isIntersecting)),
       { threshold: 0.1 }
     )
     ref.current?.querySelectorAll('.reveal').forEach(el => observer.observe(el))
     return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    const el = statsGridRef.current
+    if (!el) return
+    const statsObs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setStatsTriggered(true)
+          statsObs.disconnect()
+        }
+      },
+      { threshold: 0.6 }
+    )
+    statsObs.observe(el)
+    return () => statsObs.disconnect()
   }, [])
 
   return (
@@ -99,10 +109,9 @@ export default function About() {
           </div>
         </div>
 
-        {/* Stats */}
-        <div className="md:col-span-2 grid grid-cols-2 gap-4" data-stats="true">
+        <div ref={statsGridRef} className="md:col-span-2 grid grid-cols-2 gap-4">
           {stats.map((s, i) => (
-            <div key={s.label} className={`reveal reveal-delay-${i + 1}`} data-stats="true">
+            <div key={s.label} className={`reveal reveal-delay-${i + 1}`}>
               <AnimatedStat
                 end={s.end}
                 suffix={s.suffix}
