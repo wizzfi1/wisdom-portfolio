@@ -98,7 +98,7 @@ export default function Certs() {
           {certs.map((cert, i) => (
             <div
               key={cert.code}
-              className={`reveal reveal-delay-${(i % 4) + 1} card border ${borderMap[cert.color]} p-5 space-y-3 group transition-all duration-300 hover:-translate-y-1`}
+              className={`reveal reveal-delay-${(i % 4) + 1} glow-card gradient-border p-5 space-y-3 group`}
             >
               <div className="flex items-center justify-between">
                 <span className="text-2xl">{cert.icon}</span>

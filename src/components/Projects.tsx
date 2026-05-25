@@ -114,7 +114,7 @@ export default function Projects() {
               href={p.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`reveal reveal-delay-${(i % 3) + 1} card p-5 flex flex-col gap-4 group cursor-pointer hover:shadow-lg ${borderMap[p.color]} transition-all duration-300`}
+              className={`reveal reveal-delay-${(i % 3) + 1} glow-card gradient-border p-5 flex flex-col gap-4 group cursor-pointer`}
             >
               {/* Top: title + period */}
               <div className="flex items-start justify-between">

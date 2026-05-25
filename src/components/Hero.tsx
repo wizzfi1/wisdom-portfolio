@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
+import Particles from './Particles'
 
 const SEQUENCES = [
   {
@@ -121,6 +122,7 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center grid-bg overflow-hidden">
+      <Particles />
       {/* Radial glow */}
       <div className="absolute inset-0 bg-glow-radial pointer-events-none" />
 

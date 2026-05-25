@@ -1,19 +1,56 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const stats = [
-  { value: '8+', label: 'Projects shipped', color: 'text-green' },
-  { value: '7', label: 'Certifications', color: 'text-blue' },
-  { value: '2+', label: 'Years building', color: 'text-purple' },
-  { value: '3', label: 'Cloud platforms', color: 'text-orange' },
+  { end: 8, suffix: '+', label: 'Projects shipped', color: 'text-green' },
+  { end: 7, suffix: '', label: 'Certifications', color: 'text-blue' },
+  { end: 2, suffix: '+', label: 'Years building', color: 'text-purple' },
+  { end: 3, suffix: '', label: 'Cloud platforms', color: 'text-orange' },
 ]
+
+function AnimatedStat({ end, suffix, color, label, triggered }: {
+  end: number; suffix: string; color: string; label: string; triggered: boolean
+}) {
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    if (!triggered) return
+    let start = 0
+    const duration = 1200
+    const step = Math.ceil(duration / end)
+    const timer = setInterval(() => {
+      start += 1
+      setCount(start)
+      if (start >= end) clearInterval(timer)
+    }, step)
+    return () => clearInterval(timer)
+  }, [triggered, end])
+
+  return (
+    <div className="card p-5 text-center">
+      <div className={`font-mono text-3xl font-bold ${color} mb-1 stat-value`}
+        style={{ animationDelay: '0.1s' }}>
+        {count}{suffix}
+      </div>
+      <div className="text-txt-muted text-xs leading-snug">{label}</div>
+    </div>
+  )
+}
 
 export default function About() {
   const ref = useRef<HTMLDivElement>(null)
+  const [statsTriggered, setStatsTriggered] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => e.target.classList.toggle('visible', e.isIntersecting)),
+      (entries) => {
+        entries.forEach(e => {
+          e.target.classList.toggle('visible', e.isIntersecting)
+          if (e.isIntersecting && (e.target as HTMLElement).dataset.stats) {
+            setStatsTriggered(true)
+          }
+        })
+      },
       { threshold: 0.1 }
     )
     ref.current?.querySelectorAll('.reveal').forEach(el => observer.observe(el))
@@ -63,14 +100,16 @@ export default function About() {
         </div>
 
         {/* Stats */}
-        <div className="md:col-span-2 grid grid-cols-2 gap-4">
+        <div className="md:col-span-2 grid grid-cols-2 gap-4" data-stats="true">
           {stats.map((s, i) => (
-            <div
-              key={s.label}
-              className={`reveal reveal-delay-${i + 1} card p-5 text-center`}
-            >
-              <div className={`font-mono text-3xl font-bold ${s.color} mb-1`}>{s.value}</div>
-              <div className="text-txt-muted text-xs leading-snug">{s.label}</div>
+            <div key={s.label} className={`reveal reveal-delay-${i + 1}`} data-stats="true">
+              <AnimatedStat
+                end={s.end}
+                suffix={s.suffix}
+                color={s.color}
+                label={s.label}
+                triggered={statsTriggered}
+              />
             </div>
           ))}
         </div>
