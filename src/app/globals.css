@@ -72,9 +72,9 @@ body {
 }
 
 /* Glow effects */
-.glow-green { box-shadow: 0 0 30px rgba(16, 185, 129, 0.15); }
-.glow-green-hover:hover { box-shadow: 0 0 40px rgba(16, 185, 129, 0.25); }
-.text-glow { text-shadow: 0 0 20px rgba(52, 211, 153, 0.5); }
+.glow-green { box-shadow: 0 0 20px rgba(16, 185, 129, 0.08); }
+.glow-green-hover:hover { box-shadow: 0 0 28px rgba(16, 185, 129, 0.14); }
+.text-glow { text-shadow: 0 0 16px rgba(52, 211, 153, 0.3); }
 
 /* Grid bg */
 .grid-bg {
@@ -192,7 +192,7 @@ body {
   inset: 0;
   background: radial-gradient(
     400px circle at var(--gx, -999px) var(--gy, -999px),
-    rgba(var(--gc, 16, 185, 129), 0.07),
+    rgba(var(--gc, 16, 185, 129), 0.05),
     transparent 60%
   );
   pointer-events: none;

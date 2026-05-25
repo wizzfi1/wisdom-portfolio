@@ -71,8 +71,8 @@ const config: Config = {
           '50%': { opacity: '0' },
         },
         glowPulse: {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(16,185,129,0.1)' },
-          '50%': { boxShadow: '0 0 40px rgba(16,185,129,0.25)' },
+          '0%, 100%': { boxShadow: '0 0 12px rgba(16,185,129,0.06)' },
+          '50%': { boxShadow: '0 0 24px rgba(16,185,129,0.12)' },
         },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
@@ -86,7 +86,7 @@ const config: Config = {
       backgroundImage: {
         'grid-pattern': `linear-gradient(rgba(16,185,129,0.03) 1px, transparent 1px),
                          linear-gradient(90deg, rgba(16,185,129,0.03) 1px, transparent 1px)`,
-        'glow-radial': 'radial-gradient(ellipse at center, rgba(16,185,129,0.08) 0%, transparent 70%)',
+        'glow-radial': 'radial-gradient(ellipse at center, rgba(16,185,129,0.04) 0%, transparent 70%)',
       },
       backgroundSize: {
         grid: '60px 60px',

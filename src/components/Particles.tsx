@@ -40,7 +40,7 @@ export default function Particles() {
       vx: (Math.random() - 0.5) * 0.4,
       vy: (Math.random() - 0.5) * 0.4,
       size: Math.random() * 1.5 + 0.5,
-      opacity: Math.random() * 0.4 + 0.1,
+      opacity: Math.random() * 0.25 + 0.05,
     }))
 
     const draw = () => {
@@ -67,7 +67,7 @@ export default function Particles() {
           ctx.beginPath()
           ctx.moveTo(p.x, p.y)
           ctx.lineTo(mx, my)
-          ctx.strokeStyle = `rgba(${COLOR}, ${0.15 * (1 - md / 150)})`
+          ctx.strokeStyle = `rgba(${COLOR}, ${0.08 * (1 - md / 150)})`
           ctx.lineWidth = 0.5
           ctx.stroke()
         }
@@ -81,7 +81,7 @@ export default function Particles() {
             ctx.beginPath()
             ctx.moveTo(p.x, p.y)
             ctx.lineTo(q.x, q.y)
-            ctx.strokeStyle = `rgba(${COLOR}, ${0.08 * (1 - d / MAX_DIST)})`
+            ctx.strokeStyle = `rgba(${COLOR}, ${0.04 * (1 - d / MAX_DIST)})`
             ctx.lineWidth = 0.4
             ctx.stroke()
           }
@@ -103,7 +103,7 @@ export default function Particles() {
     <canvas
       ref={canvasRef}
       className="absolute inset-0 pointer-events-none"
-      style={{ opacity: 0.6 }}
+      style={{ opacity: 0.4 }}
     />
   )
 }
