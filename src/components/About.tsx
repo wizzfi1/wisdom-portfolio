@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const stats = [
   { end: 8, suffix: '+', label: 'Projects shipped', color: 'text-green' },
-  { end: 7, suffix: '', label: 'Certifications', color: 'text-blue' },
+  { end: 8, suffix: '', label: 'Certifications', color: 'text-blue' },
   { end: 2, suffix: '+', label: 'Years building', color: 'text-purple' },
   { end: 3, suffix: '', label: 'Cloud platforms', color: 'text-orange' },
 ]
@@ -81,19 +81,19 @@ export default function About() {
 
           <div className="reveal reveal-delay-1 space-y-4 text-txt-muted leading-relaxed">
             <p>
-              I'm a Backend, DevOps, and AI Systems Engineer who builds the stuff that has to work —
-              the APIs, the pipelines, the infra, and increasingly, the AI layer on top of it.
-              Not because it's cool, but because teams depend on it being up, fast, and correct.
+              I'm an AI and backend engineer who builds agent-native systems, production-ready APIs,
+              and distributed infrastructure using Node.js, TypeScript, and Python. Currently building
+              autonomous QA agents at VettedAI using Playwright, Gemini multimodal, and NVIDIA NIM.
             </p>
             <p>
-              My work spans production-ready Node.js/TypeScript APIs with event-driven architecture,
-              to Kubernetes platforms running 8+ microservices, to RAG pipelines and LLM orchestration
-              systems built on Azure OpenAI. I hold the{' '}
+              My work spans semantic search platforms with multilingual voice input, multi-stage
+              reconciliation pipelines, logistics APIs with real-time WebSocket tracking, and
+              Kubernetes platforms running 8+ microservices. I hold the{' '}
               <span className="text-green font-medium">Azure AI Engineer Associate (2026)</span>{' '}
-              certification and apply it in real systems.
+              and apply that knowledge in real systems, not just exams.
             </p>
             <p>
-              Before software, I spent two years at Sterling Bank processing 100+ daily transactions —
+              Before software, I spent two years at Sterling Bank processing 100+ daily transactions,
               which gave me something no bootcamp teaches:{' '}
               <span className="text-green font-medium">obsession with data integrity and zero tolerance for system failure.</span>
             </p>

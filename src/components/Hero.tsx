@@ -5,7 +5,7 @@ import Particles from './Particles'
 const SEQUENCES = [
   {
     cmd: 'whoami',
-    output: ['Wisdom Ojochegbe Shaibu', 'Backend Engineer · DevOps Engineer'],
+    output: ['Wisdom Ojochegbe Shaibu', 'AI Engineer · Backend Engineer'],
   },
   {
     cmd: 'cat mission.txt',
@@ -14,29 +14,29 @@ const SEQUENCES = [
   {
     cmd: 'kubectl get skills --all',
     output: [
-      'Node.js   TypeScript   Python   NestJS',
+      'Node.js   TypeScript   Python   FastAPI',
       'K8s       Terraform    AWS      Docker',
-      'Grafana   Prometheus   CI/CD    Redis',
+      'Claude    Gemini       NIM      Playwright',
     ],
   },
   {
     cmd: 'ls certifications/',
     output: [
-      'azure-ai-engineer/   azure-developer/',
-      'kcna/                azure-fundamentals/',
+      'azure-ai-engineer/   sc-300/',
+      'azure-developer/     kcna/',
       'github-foundations/  foundational-csharp/',
     ],
   },
   {
-    cmd: 'cat ai_systems.txt',
+    cmd: 'cat ai_agents.txt',
     output: [
-      'Azure OpenAI · RAG pipelines · LLM orchestration',
-      'High-throughput async queues · Vector DBs · Semantic Kernel',
+      'Claude API · Gemini Multimodal · NVIDIA NIM',
+      'Playwright automation · Ahnlich vector DB · Whisper',
     ],
   },
   {
     cmd: 'ping hire-wisdom --repeat',
-    output: ['PONG — Available. Response time: immediate.', 'Zero packet loss. 100% uptime.'],
+    output: ['PONG - Available. Response time: immediate.', 'Zero packet loss. 100% uptime.'],
   },
 ]
 
@@ -145,17 +145,17 @@ export default function Hero() {
               <span className="text-5xl md:text-7xl block gradient-text">SHAIBU</span>
             </h1>
             <div className="mt-4 flex flex-wrap gap-2">
-              <span className="tag">Backend Engineer</span>
-              <span className="tag-blue tag">DevOps Engineer</span>
-              <span className="tag-purple tag">AI Systems</span>
+              <span className="tag">AI Engineer</span>
+              <span className="tag-blue tag">Backend Engineer</span>
+              <span className="tag-purple tag">AI Agents</span>
               <span className="tag-orange tag">Cloud ∙ AWS ∙ Azure</span>
             </div>
           </div>
 
           <p className="text-txt-muted leading-relaxed max-w-md">
-            I build production-grade APIs, AI-powered systems, and cloud infrastructure
-            that scale under pressure — from LLM orchestration pipelines to high-throughput
-            Kubernetes platforms. If it runs in prod, it's my responsibility.
+            I build agent-native systems, production-ready APIs, and distributed infrastructure.
+            Currently shipping autonomous QA agents at VettedAI using Gemini, NVIDIA NIM, and
+            Playwright. If it runs in prod, it's my responsibility.
           </p>
 
           <div className="flex flex-wrap gap-3 pt-2">

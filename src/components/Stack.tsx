@@ -7,9 +7,9 @@ const categories = [
     label: 'Backend',
     color: 'green',
     skills: [
-      'Node.js', 'TypeScript', 'Python', 'Express', 'NestJS', 'Flask',
-      'C# (.NET)', 'REST APIs', 'WebSockets', 'Socket.io', 'Event-Driven Arch',
-      'BullMQ', 'JWT', 'RBAC', 'OAuth2',
+      'Node.js', 'TypeScript', 'Python', 'Express', 'NestJS', 'FastAPI',
+      'ASP.NET Core', 'Blazor Server', 'WPF', 'C#', 'REST APIs',
+      'WebSockets', 'Event-Driven Arch', 'BullMQ', 'JWT', 'RBAC', 'OAuth2',
     ],
   },
   {
@@ -17,9 +17,9 @@ const categories = [
     label: 'Cloud & DevOps',
     color: 'blue',
     skills: [
-      'AWS', 'Microsoft Azure', 'GCP', 'Docker', 'Kubernetes', 'K3s',
-      'Helm', 'Terraform', 'Ansible', 'NGINX', 'GitHub Actions',
-      'Azure DevOps', 'CI/CD Pipelines', 'DevSecOps', 'Infrastructure as Code',
+      'AWS (EC2, ECR, SSM)', 'Microsoft Azure', 'Docker', 'Kubernetes',
+      'Terraform', 'NGINX', 'GitHub Actions', 'Vercel', 'Linux',
+      'CI/CD Pipelines', 'DevSecOps', 'Infrastructure as Code',
     ],
   },
   {
@@ -27,8 +27,9 @@ const categories = [
     label: 'Data & Messaging',
     color: 'purple',
     skills: [
-      'PostgreSQL', 'MongoDB', 'Redis', 'SQL', 'Sequelize ORM',
-      'Data Modeling', 'Transaction Handling', 'BullMQ queues',
+      'PostgreSQL', 'SQL Server', 'MongoDB', 'Redis', 'Neon',
+      'Vector Databases', 'Ahnlich', 'Pinecone', 'Sequelize ORM',
+      'Dapper', 'Data Modeling', 'Transaction Handling', 'BullMQ',
     ],
   },
   {
@@ -36,21 +37,20 @@ const categories = [
     label: 'Observability & Security',
     color: 'orange',
     skills: [
-      'Prometheus', 'Grafana', 'Sentry', 'SAST scanning',
-      'Secrets detection', 'IaC validation', 'Container hardening',
-      'Structured logging', 'Health checks', 'Alerting',
+      'Prometheus', 'Grafana', 'Structured logging', 'Health checks',
+      'SAST scanning', 'Secrets detection', 'IaC validation',
+      'Container hardening', 'Audit logging', 'Alerting',
     ],
   },
   {
     id: 'ai',
-    label: 'AI & High Throughput',
+    label: 'AI & Agents',
     color: 'green',
     skills: [
-      'Azure OpenAI', 'Azure AI Services', 'Azure AI Foundry',
-      'RAG Pipelines', 'LLM Orchestration', 'Semantic Kernel',
-      'Vector Databases', 'Embeddings', 'Prompt Engineering',
-      'Azure Document Intelligence', 'Azure AI Search',
-      'Async Queue Architecture', 'BullMQ', 'Event-Driven Systems',
+      'Claude API', 'Gemini Multimodal', 'NVIDIA NIM', 'OpenAI Whisper',
+      'Playwright Automation', 'Semantic Search', 'Multimodal AI Agents',
+      'Ahnlich Vector DB', 'RAG Pipelines', 'Embeddings',
+      'Async Queue Architecture', 'Event-Driven Systems',
       'High-Throughput API Design', 'WebSocket Streaming',
     ],
   },

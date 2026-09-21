@@ -11,6 +11,14 @@ const certs = [
     icon: '⚡',
   },
   {
+    name: 'Identity and Access Administrator Associate',
+    issuer: 'Microsoft',
+    year: '2026',
+    code: 'SC-300',
+    color: 'blue',
+    icon: '🔐',
+  },
+  {
     name: 'Azure Developer Associate',
     issuer: 'Microsoft',
     year: '2025',
@@ -121,7 +129,7 @@ export default function Certs() {
           <div>
             <span className="text-green">$ echo $CERT_COUNT</span>
             <div className="mt-1 text-txt-muted">
-              <span className="text-green-bright text-lg font-bold">7</span> active certifications across Azure, Kubernetes, and GitHub
+              <span className="text-green-bright text-lg font-bold">8</span> active certifications across Azure, Kubernetes, and GitHub
             </div>
           </div>
           <div className="text-txt-muted text-xs leading-relaxed max-w-xs">
