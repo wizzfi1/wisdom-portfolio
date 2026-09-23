@@ -9,7 +9,7 @@ const projects = [
       'Semantic labour marketplace for Nigeria\'s informal economy. FastAPI backend, Ahnlich vector DB with all-MiniLM-L6-v2 embeddings, cosine similarity matching across Pidgin, Yoruba, Hausa, and Igbo queries. Claude Haiku query normalisation, OpenAI Whisper voice search, Redis caching, and AWS EC2/ECR deployment. Sub-2-second search latency.',
     stack: ['FastAPI', 'Python', 'Ahnlich', 'Claude API', 'OpenAI Whisper', 'Redis', 'AWS', 'Terraform', 'Next.js'],
     color: 'green',
-    link: 'https://github.com/wizzfi1',
+    link: 'https://wiyanos.vercel.app/',
     highlight: true,
   },
   {
