@@ -6,7 +6,7 @@ const roles = [
     text: "AI-assisted QA workflows connecting generated tests, browser agents, authenticated sessions and structured reports.",
   },
   {
-    company: "Greenwich",
+    company: "Greenwich Registrars & Data Solutions",
     role: "Software Developer",
     date: "SEP 2025 - PRESENT",
     text: "Financial reconciliation and internal .NET applications, including meetings, training and document workflows.",
