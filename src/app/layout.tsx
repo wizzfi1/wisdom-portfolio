@@ -1,35 +1,36 @@
-import type { Metadata } from 'next'
-import './globals.css'
-
+import type { Metadata } from "next";
+import "./globals.css";
+const title = "Wisdom Shaibu | Applied AI & Backend Engineer";
+const description =
+  "Applied AI and backend engineering across software testing, financial automation and accessible learning. Explore projects, engineering decisions and the systems behind the work.";
 export const metadata: Metadata = {
-  title: 'Wisdom Shaibu — Backend, DevOps & AI Systems Engineer',
-  description:
-    'Backend, DevOps, and AI Systems Engineer building production-grade APIs, LLM orchestration pipelines, and high-throughput Kubernetes platforms. Azure AI Engineer Associate (2026). Available for new opportunities.',
-  keywords: [
-    'Backend Engineer', 'DevOps Engineer', 'AI Engineer', 'Node.js', 'TypeScript',
-    'Kubernetes', 'Terraform', 'AWS', 'Azure', 'Azure OpenAI', 'RAG', 'LLM',
-    'Docker', 'NestJS', 'PostgreSQL', 'CI/CD', 'High Throughput', 'LLM Orchestration',
-  ],
-  authors: [{ name: 'Wisdom Shaibu' }],
+  metadataBase: new URL("https://wisdom-portfolio-rho.vercel.app"),
+  title,
+  description,
+  alternates: { canonical: "/" },
+  authors: [{ name: "Wisdom Shaibu" }],
   openGraph: {
-    title: 'Wisdom Shaibu — Backend & DevOps Engineer | Node.js · K8s · AWS',
-    description:
-      'Backend and DevOps Engineer building production-grade APIs, Kubernetes platforms, and CI/CD pipelines. Specializes in Node.js, TypeScript, Terraform, and AWS. Available for new opportunities.',
-    type: 'website',
-    siteName: 'Wisdom Shaibu',
+    title,
+    description,
+    type: "website",
+    siteName: "Wisdom Shaibu",
+    locale: "en_NG",
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Wisdom Shaibu — Backend & DevOps Engineer | Node.js · K8s · AWS',
-    description:
-      'Backend and DevOps Engineer building production-grade APIs, Kubernetes platforms, and CI/CD pipelines. Specializes in Node.js, TypeScript, Terraform, and AWS. Available for new opportunities.',
-  },
-}
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+  twitter: { card: "summary_large_image", title, description },
+};
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="antialiased" suppressHydrationWarning>{children}</body>
+    <html lang="en">
+      <body>
+        <a className="skip-link" href="#main">
+          Skip to content
+        </a>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
